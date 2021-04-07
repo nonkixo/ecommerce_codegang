@@ -1,0 +1,374 @@
+/*
+ Theme Name:   Storefront Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Storefront Child Theme
+ Author:       Niki Piskorczyk
+ Author URI:   http://example.com
+ Template:     storefront
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  storefront
+*/ 
+/* Farver som er i brug i forhold til både knapper, body osv,*/
+:root {
+
+    --color1:#15b3bf; 
+    --color2:#E8F8FF;
+    --color3:#CAEAF9;
+    --color4:#AD8F6A;
+    --color5:#FAE4CA;
+    --sale:#35d643;
+    --text:#000000;
+    --button1:#fb8d23;
+    --button2:#f5bd22;
+    --hover:#B7FFF2;
+}
+
+* { margin: 0%;
+padding: 0%;    
+}
+    
+.woocommerce-result-count {
+    color:black;
+    font-size: 2rem;   
+    float: right;
+    }
+    .site-header-cart-menu {
+      color: black;
+      padding: 1rem;
+      position: relative;
+    
+    }
+    
+      /* HEADER CART */
+      .site-header-cart .cart-contents:after {
+        float: none;
+      }
+        /* NAVIGATION, Main navigationsbar er ikke på display, da der er en secondary navigation lavet gennem wordpress, så kodet til at være lige ved siden af logoet på desktop.  */
+        .main-navigation {
+          display: none;
+        }
+        .storefront-secondary-navigation.woocommerce-active .site-header .secondary-navigation {
+       color: var(--text);
+       list-style-type: none;
+       margin-left: -6rem;
+       padding-top: 6rem;
+       font-size: 2rem;
+       display: flex;
+       font-weight: 900;
+        }
+        /* Searchbar der har fået mere margin-top, for at passe på linje sammen med logoet og header-navigationen.*/
+        .site-search .widget_product_search {
+       margin-top: 6.5rem;   
+        }
+.site-title a {
+color:var(--color2);
+font-size: 50px;
+font-weight: 600;
+  }
+body {
+background-color:white;
+}
+h1 {
+color: black;    
+font-weight:700;
+}
+img {
+height: auto;
+margin: 1rem;  
+}
+/* SIDEBAR, Justering på sidebars størrelse og få den til at floate til højre, så den passer sammen med top kurven på desktop.*/
+.right-sidebar .widget-area {
+  font-size: 1rem; 
+  float: left;
+  padding-right: 0rem;
+  }
+  .widget_shopping_cart p.buttons{
+ font-size:1rem;   
+  }
+/* PLAKAT TITLER, Plakat titler med mere font-weight, forstørret størrelse med font-size, som har rem i stedet for px.*/
+.woocommerce-loop-product__title {
+font-weight: 500;
+color: var(--text);  
+}
+.count {
+color: var(--text);
+font-size: 1rem; 
+opacity: 100%; 
+}
+.storefront-primary-navigation {
+  background-color: #15b3bf;
+  
+  
+  }
+.menu {
+max-width: none;  
+}
+
+.site-branding {
+font-size: 2rem;
+}
+.site header {
+color: black;
+width: 100%;
+}
+.site-header-cart {
+float: none;
+}
+.page-description {
+display: inline-block;
+font-size: large;
+font-weight: 800;
+position:relative;
+}  
+
+/* TEKSTER OG FONT-WEIGHTS, Mere tekst, hvor det primært er header, kurv og checkout, hvor der er puttet font-weight på. */
+.product-title {
+color:black;
+font-weight:bold;
+}
+.widget {
+color:black;
+}
+z
+
+.site-header-cart .cart-contents:after {
+float: none;
+}
+.site.footer {
+color: black;    
+}
+.woocommerce-Price-currencySymbol
+{
+color:var(--text);
+font-weight: 800;
+padding: 0.25rem
+}
+
+.onsale {
+font-size: 20px;    
+color:var(--sale);
+border:var(--sale);
+}
+
+
+.button-alt {
+color:black   
+}
+.p {
+font-weight: bold;
+margin: 1rem;
+font-weight: 300;
+color:var(--text);
+}
+.woocommerce-breadcrumb {
+font-size: 1.5rem;
+color: var(--text);    
+}
+.textwidget{
+ color: white; 
+}
+.widget_text {
+ text-align:center; 
+ padding-left: 1rem;
+}
+.a {
+ color: white;
+ font-size: 2rem;   
+}
+.site-header {
+margin-top: 0.5rem;
+font-size: 1.5rem; 
+}
+.site-header-cart {
+  padding:0;
+  }
+
+/* Knapper i headren, som skal passe sammen og logoet's justering, som automatisk ændrer sig baseret på mobil eller desktop.*/ 
+  
+.custom-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.button:hover {
+color:var(--hover)
+} 
+
+/* Knapper til mobilen */ 
+button.menu-toggle {
+margin:1rem;
+background-color:var(--color2);
+justify-content: center;
+}
+.menu-toggle {
+margin: 0.5rem;
+padding: 1rem;
+background-color: var(--color2);
+}
+.page-item-195:hover {
+color:var(--hover)  
+}
+.single-product div.product .woocommerce-product-gallery .flex-control-thumbs
+
+.woocommerce-LoopProduct-link {
+padding: 1rem;
+display: flex;
+border-style: solid;
+border-color: black;
+}
+.woocommerce-loop-product_title {
+font-weight: 800;
+
+
+}  
+.fa {
+  padding: 2rem;
+  font-size: 5rem;
+  width: 5rem;
+  display: flex;
+  text-decoration: none;
+  
+}
+/* Flex display til produkter, så det er responsivt */
+.products-columns-3 {
+display: flex;
+}
+
+/* Vores SoMe logos, som er sat ind som HTML ind i selve Wordpress, der er sat ned i bunden som social media logos der nemt kan klikkes på. */
+.fa-instagram {
+  background:#bc2a8d;
+  color: white;
+  font-size: 2rem;
+  margin-left: 5.5rem;
+}
+.fa-facebook {
+  background:#3b5998;
+  color: white;
+  font-size: 2rem;
+
+}
+
+/* Farver til tekst, hvor --text er en sort farve, som er brugt til descriptions, priser og mere, samlet ind til det hele så det passer sammen.*/
+.remove_from_cart_button {
+color: var(--text);
+}
+.woocommerce-product-details__short-description {
+color: black;
+}
+.woocommerce-Price-currencySymbol {
+color:black;  
+}
+.price {
+color: green;  
+}
+.woocommerce-checkout-review-order-table {
+color: black;  
+}
+.product-name {
+color:var(--text);
+}
+.product-price {
+  color:var(--text);
+  }
+.product-quantity {
+    color:var(--text);
+    }
+.product-subtotal {
+      color:var(--text);
+      }
+.cart-subtotal {
+color:var(--text);
+}
+.order-total {
+color:var(--text);  
+}
+.woocommerce-billing-fields__field-wrapper {
+color:var(--text);  
+}
+.place-order {
+color:var(--text);
+}
+.h2 {
+color: var(--text);
+font-weight: 900;  
+}
+.storefront-sorting {
+visibility: hidden; 
+}
+.widget-title {
+color:var(--text); 
+font-weight: 900;
+}
+.breadcrumb-separator {
+color: var(--text);  
+}
+.woocommerce-Price-currencySymbol {
+color:var(--text);
+}
+.entry-content {
+color:var(--text);  
+}
+.gamma.widget-title {
+font-weight:600;
+color: black; 
+text-align: center;
+}
+.product-list-widget {
+font-weight: 600;  
+}
+/* Media queries til mobilen, som bruges til at justere header, fjerne menuen med visibility hidden, da der er en anden menu inde fra WordPress, og logo justering til at den passer til mobil. */
+@media only screen and (max-width: 600px) {
+  .site-header {
+    display: block;
+   font-size: 1rem;
+  } 
+  .custom-logo{
+    padding: 0rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    position: relative;
+
+}
+.site.header{
+margin-bottom: 0;
+visibility: hidden;
+  
+}
+.menu-toggle{
+visibility: hidden;
+}
+.main-navigation {
+  font-weight: 300;
+  border-radius: 2rem;   
+  }
+}
+.checkout-button {
+font-size: 0rem;
+text-align: center;  
+}
+.img { 
+    width: 100%;
+    height: auto;
+}
+.wc-proceed-to-checkout .button.checkout-button {
+font-size: 1rem;
+} 
+.site.footer {
+  color: black;    
+  }
+.custom-logo-link {
+margin-left: 1rem;
+}
+.storefront-handheld-footer-bar ul li.my-account>a:before {
+display: none;  
+} 
+
+.storefront-secondary-navigation.woocommerce-active .site-header .secondary-navigation {
+  font-size:1rem;
+  padding-left: 13rem;
+  }
+      .storefront-handheld-footer-bar ul li.search .site-search {
+  margin-bottom:-46px;		
+    }
