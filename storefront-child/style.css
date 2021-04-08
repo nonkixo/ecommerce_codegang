@@ -364,7 +364,7 @@ margin-left: 1rem;
 .storefront-handheld-footer-bar ul li.my-account>a:before {
 display: none;  
 } 
-
+/* EKSTRA MEDIA QUERIES TILFØJET I ADDITIONAL CSS EFTER AT HAVE SAT DET ONLINE */
 .storefront-secondary-navigation.woocommerce-active .site-header .secondary-navigation {
   font-size:1rem;
   padding-left: 13rem;
